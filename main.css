@@ -1,0 +1,91 @@
+@charset "utf-8";
+#back_board {
+	background-image: url(./images/board.gif);
+	width: 500px;
+	height: 784px;
+	position: relative;
+	
+}
+
+.code_input_row {
+	width: 450px;
+	height: 72px;
+	position: relative;
+	left: 25px;
+	top: 25px;
+	
+}
+
+.code_plate {
+	background-image: url(./images/code_plate.gif);
+	float: left;
+	width: 304px;
+	height: 72px;
+	position: relative;
+	left: 5px;
+	display: table;
+}
+
+.answer_plate {
+	background-image: url(./images/answer_plate.gif);		
+	float: right;
+	width: 84px;
+	height: 72px;
+	position: relative;
+	left: -5px;
+}
+
+.code_pin_holder {
+	background-image: url(./images/code_dot_holder.png);
+	width: 42px;
+	height: 42px;
+	border-radius: 50px;
+	float: left;
+	position: relative;
+	top: 15px;
+	left: 10px;
+	margin-left: 22px;
+	box-shadow: 3px 3px 5px #000000;
+	
+	}
+
+.answer_pin_holder {
+	background-image: url(./images/answer_dot_holder.png);
+	width: 23px;
+	height: 23px;
+	border-radius: 50px;
+	float: left;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	margin-left: 6px;
+	box-shadow: 3px 3px 5px #000000;
+	
+	}
+	
+.pin {
+	border-radius: 150px;
+	box-shadow: 3px 3px 5px #000000;
+	position: relative;
+	width: 24px;
+	height: 24px;
+	left: 9px; 
+	top: 9px;
+
+}
+
+.small_pin {
+	border-radius: 150px;
+	box-shadow: 1px 1px 1px #000000;
+	position: relative;
+	width: 12px;
+	height: 12px;
+	left: 6px; 
+	top: 2px;
+
+}
+
+
+
+
+

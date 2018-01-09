@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test</title>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+<script src="./main.js"></script>
+<script src="./test.js"></script>
+<link rel="stylesheet" type="text/css" href="./main.css">
+
+
+
+</head>
+
+<body oncontextmenu="return false;">
+
+
+<div id="back_board">
+	<div class="code_input_row">
+		<div class="code_plate">
+			<div id="code_pin_holder_00" class="code_pin_holder"><img id="cimage_00" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_01" class="code_pin_holder"><img id="cimage_01" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_02" class="code_pin_holder"><img id="cimage_02" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_03" class="code_pin_holder"><img id="cimage_03" src="./images/EMPTY.gif" class="pin">
+			</div>
+		</div>
+		<div class="answer_plate">
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_00" class="answer_pin_holder"><img id="aimage_00" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_01" class="answer_pin_holder"><img id="aimage_01" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_02" class="answer_pin_holder"><img id="aimage_02" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_03" class="answer_pin_holder"><img id="aimage_03" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+		</div>
+	</div>
+
+	<div class="code_input_row">
+		<div class="code_plate">
+			<div id="code_pin_holder_10" class="code_pin_holder"><img id="cimage_10" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_11" class="code_pin_holder"><img id="cimage_11" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_12" class="code_pin_holder"><img id="cimage_12" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_13" class="code_pin_holder"><img id="cimage_13" src="./images/EMPTY.gif" class="pin">
+			</div>
+		</div>
+		<div class="answer_plate">
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_10" class="answer_pin_holder"><img id="aimage_10" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_11" class="answer_pin_holder"><img id="aimage_11" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_12" class="answer_pin_holder"><img id="aimage_12" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_13" class="answer_pin_holder"><img id="aimage_13" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+		</div>
+	</div>
+
+	<div class="code_input_row">
+		<div class="code_plate">
+			<div id="code_pin_holder_20" class="code_pin_holder"><img id="cimage_20" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_21" class="code_pin_holder"><img id="cimage_21" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_22" class="code_pin_holder"><img id="cimage_22" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_23" class="code_pin_holder"><img id="cimage_23" src="./images/EMPTY.gif" class="pin">
+			</div>
+		</div>
+		<div class="answer_plate">
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_20" class="answer_pin_holder"><img id="aimage_20" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_21" class="answer_pin_holder"><img id="aimage_21" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_22" class="answer_pin_holder"><img id="aimage_22" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_23" class="answer_pin_holder"><img id="aimage_23" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+		</div>
+	</div>
+
+	<div class="code_input_row">
+		<div class="code_plate">
+			<div id="code_pin_holder_30" class="code_pin_holder"><img id="cimage_30" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_31" class="code_pin_holder"><img id="cimage_31" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_32" class="code_pin_holder"><img id="cimage_32" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_33" class="code_pin_holder"><img id="cimage_33" src="./images/EMPTY.gif" class="pin">
+			</div>
+		</div>
+		<div class="answer_plate">
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_30" class="answer_pin_holder"><img id="aimage_30" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_31" class="answer_pin_holder"><img id="aimage_31" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_32" class="answer_pin_holder"><img id="aimage_32" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_33" class="answer_pin_holder"><img id="aimage_33" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+		</div>
+	</div>
+
+	<div class="code_input_row">
+		<div class="code_plate">
+			<div id="code_pin_holder_40" class="code_pin_holder"><img id="cimage_40" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_41" class="code_pin_holder"><img id="cimage_41" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_42" class="code_pin_holder"><img id="cimage_42" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_43" class="code_pin_holder"><img id="cimage_43" src="./images/EMPTY.gif" class="pin">
+			</div>
+		</div>
+		<div class="answer_plate">
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_40" class="answer_pin_holder"><img id="aimage_40" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_41" class="answer_pin_holder"><img id="aimage_41" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_42" class="answer_pin_holder"><img id="aimage_42" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_43" class="answer_pin_holder"><img id="aimage_43" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+		</div>
+	</div>
+
+	<div class="code_input_row">
+		<div class="code_plate">
+			<div id="code_pin_holder_50" class="code_pin_holder"><img id="cimage_50" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_51" class="code_pin_holder"><img id="cimage_51" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_52" class="code_pin_holder"><img id="cimage_52" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_53" class="code_pin_holder"><img id="cimage_53" src="./images/EMPTY.gif" class="pin">
+			</div>
+		</div>
+		<div class="answer_plate">
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_50" class="answer_pin_holder"><img id="aimage_50" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_51" class="answer_pin_holder"><img id="aimage_51" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_52" class="answer_pin_holder"><img id="aimage_52" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_53" class="answer_pin_holder"><img id="aimage_53" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+		</div>
+	</div>
+
+	<div class="code_input_row">
+		<div class="code_plate">
+			<div id="code_pin_holder_60" class="code_pin_holder"><img id="cimage_60" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_61" class="code_pin_holder"><img id="cimage_61" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_62" class="code_pin_holder"><img id="cimage_62" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_63" class="code_pin_holder"><img id="cimage_63" src="./images/EMPTY.gif" class="pin">
+			</div>
+		</div>
+		<div class="answer_plate">
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_60" class="answer_pin_holder"><img id="aimage_60" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_61" class="answer_pin_holder"><img id="aimage_61" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_62" class="answer_pin_holder"><img id="aimage_62" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_63" class="answer_pin_holder"><img id="aimage_63" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+		</div>
+	</div>
+	<div class="code_input_row">
+		<div class="code_plate">
+			<div id="code_pin_holder_70" class="code_pin_holder"><img id="cimage_70" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_71" class="code_pin_holder"><img id="cimage_71" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_72" class="code_pin_holder"><img id="cimage_72" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_73" class="code_pin_holder"><img id="cimage_73" src="./images/EMPTY.gif" class="pin">
+			</div>
+		</div>
+			<div class="answer_plate">
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_70" class="answer_pin_holder"><img id="aimage_70" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_71" class="answer_pin_holder"><img id="aimage_71" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_72" class="answer_pin_holder"><img id="aimage_72" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_73" class="answer_pin_holder"><img id="aimage_73" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+		</div>
+	</div>
+
+	<div class="code_input_row">
+		<div class="code_plate">
+			<div id="code_pin_holder_80" class="code_pin_holder"><img id="cimage_80" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_81" class="code_pin_holder"><img id="cimage_81" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_82" class="code_pin_holder"><img id="cimage_82" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_83" class="code_pin_holder"><img id="cimage_83" src="./images/EMPTY.gif" class="pin">
+			</div>
+		</div>
+		<div class="answer_plate">
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_80" class="answer_pin_holder"><img id="aimage_80" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_81" class="answer_pin_holder"><img id="aimage_81" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_82" class="answer_pin_holder"><img id="aimage_82" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_83" class="answer_pin_holder"><img id="aimage_83" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+		</div>
+	</div>
+
+	<div class="code_input_row">
+		<div class="code_plate">
+			<div id="code_pin_holder_90" class="code_pin_holder"><img id="cimage_90" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_91" class="code_pin_holder"><img id="cimage_91" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_92" class="code_pin_holder"><img id="cimage_92" src="./images/EMPTY.gif" class="pin">
+			</div>
+			<div id="code_pin_holder_93" class="code_pin_holder"><img id="cimage_93" src="./images/EMPTY.gif" class="pin">
+			</div>
+		</div>
+		<div class="answer_plate">
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_90" class="answer_pin_holder"><img id="aimage_90" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_91" class="answer_pin_holder"><img id="aimage_91" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_92" class="answer_pin_holder"><img id="aimage_92" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+			<div onmousedown="handleClickAnswer(event, this.id)" id="answer_pin_holder_93" class="answer_pin_holder"><img id="aimage_93" src="./images/EMPTY.gif" class="small_pin">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="submit">
+	<button onclick="mainFunct(event, this.id)" id="0">START GAME</button>
+
+</div>
+
+
+
+
+
+
+
+<div id="debug">
+</div>
+
+
+
+
+</body>
+</html>
